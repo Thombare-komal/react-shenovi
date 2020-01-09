@@ -6,7 +6,6 @@ class PublicForum extends React.Component {
     super();
   }
   componentDidMount(){
-alert(1)
   }
   render() {
     return <div>PublicForum</div>;

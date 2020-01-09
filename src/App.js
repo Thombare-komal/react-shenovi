@@ -12,7 +12,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/dashboard" render={props => <AdminLayout {...props} />} />
             <Route path="/public-forum" render={props => <AdminLayout {...props} />} />
-            <Route path="/users" render={props => <AdminLayout {...props} />} />
+            <Route path="/registered-community" render={props => <AdminLayout {...props} />} />
             {/* <Route path="/login" render={props => <Login {...props} />} /> */}
             <Redirect from="/" to="/dashboard/home" />
           </Switch>

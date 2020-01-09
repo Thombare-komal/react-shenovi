@@ -29,19 +29,20 @@ class AppBuilder extends React.Component {
           />
         );
       } 
-      else if (prop.layout === "/users") {
-        const Component1 = prop.items[0].component;
-        console.log(prop.layout+prop.items[0].path)
-        return (
-          <Route
-            path={prop.layout+prop.items[0].path}
-            render={props => (
-              <Component1 {...props} componentName={prop.items[0].name}  />
-            )}
-            key={key}
-          />
-        );
-      }
+      // else 
+      // if (prop.layout === "/users") {
+      //   const Component1 = prop.items[0].component;
+      //   console.log(prop.layout+prop.items[0].path)
+      //   return (
+      //     <Route
+      //       path={prop.layout+prop.items[0].path}
+      //       render={props => (
+      //         <Component1 {...props} componentName={prop.items[0].name}  />
+      //       )}
+      //       key={key}
+      //     />
+      //   );
+      // }
       else if (prop.layout === "/registered-community") {
         const Component1 = prop.items[0].component;
         console.log(prop.layout)

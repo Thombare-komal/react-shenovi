@@ -6,7 +6,6 @@ class RegisteredCommunity extends React.Component {
         super();
       }
       componentDidMount(){
-        alert(1)
           }
     render(){
         return (
