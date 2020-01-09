@@ -1,0 +1,445 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .container-fluid {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1170px;
+  }
+}
+@media (min-width: 961px) {
+  .ui.toggle-button.icon.button {
+    display: none !important;
+  }
+  .ui.search-button.icon.button {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ui.toggle-button.icon.button {
+    display: inline-block;
+    background-color: #1a237e;
+    color: #ffd32a;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  .show-toggle-navbar {
+    background-color: #faebc2 !important;
+    color: black !important;
+  }
+  .MuiListItemText-inset {
+    padding-left: 0px !important;
+  }
+  .ui.search-button.icon.button {
+    display: block !important;
+    background-color: #1a237e !important;
+    color: #ffd32a !important;
+  }
+  .ui.big.input {
+    display: none !important;
+  }
+  .ui.big.input {
+    display: none !important;
+  }
+ 
+  /* .close-icon{
+    border: none !important;
+    background-color: white !important;
+    transform: scaleY !important;
+    margin: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    -ms-transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important;
+  } */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.footer {
+  background: #5c6bc0;
+  color: #fff;
+  height: 122px;
+  width: 100% !important;
+  padding-top: 33px;
+  position: absolute;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  height: 100px;
+  background-color: #1a237e;
+  width: 100%;
+  position: fixed;
+  color: #ffd32a;
+  padding-top: 25px;
+  left: 0px;
+  z-index: 5;
+}
+.flex-container {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: flex-start space-around;
+  align-items: flex-start;
+}
+.header-start-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-start-content > div {
+  padding: 20px;
+}
+.footer-start-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+}
+.footer-links {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.footer-copyright > p {
+  flex-direction: row;
+  font-size: 16px;
+  cursor: pointer;
+}
+.footer-end-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px;
+}
+.header-end-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-end-content > button {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.ui.header-login-button.button {
+  cursor: pointer !important;
+  color: #ffd32a !important;
+  border: 1px solid #ffd32a !important;
+  /* padding:8px 34px; */
+  height: 37px !important;
+  width: 106px !important;
+  /* margin-top: 25px !important; */
+  font-size: 14px !important;
+}
+.ui.header-signup-button.button {
+  cursor: pointer !important;
+  color: #1a237e !important;
+  border: 1px solid #ffd32a !important;
+  /* padding:8px 34px; */
+  height: 37px !important;
+  width: 106px !important;
+  /* margin-top: 25px; */
+  font-size: 14px !important;
+  background-color: #ffd32a !important;
+}
+.ui.active.button {
+  background-color: #1a237e !important;
+  color: #ffd32a !important;
+}
+.ui.header-login-button.button:hover {
+  background-color: #5c6bc0 !important;
+}
+.ui.header-signup-button.button:hover {
+  background-color: #ffebb3 !important;
+}
+.ui.search {
+  width: 300px;
+}
+.ui.search:focus {
+  width: 300px !important;
+}
+.banner-img {
+  margin-top: 100px;
+  width: 100%;
+}
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.sidebar {
+  display: block;
+  z-index: 1;
+  color: #1a237e;
+  font-size: 16px;
+  font-weight: 300;
+  background-size: cover;
+  background-position: center center;
+  background-color: #ffffff;
+  border-right: 1px solid #1a237e;
+}
+.MuiListItem-button:hover {
+  background-color: transparent !important;
+  color: #1a237e !important;
+}
+.ui.ask-question-button.button {
+  color: #1a237e;
+  background-color: #ffd32a;
+  margin-top: 10px;
+}
+.ui.ask-question-button.button:hover {
+  background-color: #ffd32a !important;
+  color: #1a237e !important;
+}
+
+.nav > li > a:focus {
+  background-color: transparent;
+}
+
+.sidebar .nav p {
+  margin: 0;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sidebar .nav .caret {
+  top: 24px;
+  position: absolute;
+  right: 15px;
+}
+
+.sidebar .nav i {
+  font-size: 20px;
+  float: left;
+  margin-right: 15px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 4;
+}
+
+.sidebar .logo p {
+  float: left;
+  font-size: 20px;
+  margin: 10px 10px;
+  color: #ffffff;
+  line-height: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sidebar .logo a.logo-mini {
+  float: left;
+  text-align: center;
+  width: 30px;
+  margin-right: 15px;
+}
+
+.sidebar .logo a.logo-mini img {
+  width: 40px;
+  margin-left: -3px;
+  display: block;
+  margin-top: 2px;
+}
+
+.sidebar .logo a.logo-normal {
+  display: block;
+}
+
+.sidebar .logo .logo-img {
+  width: 34px;
+  display: inline-block;
+  height: 34px;
+  margin-left: -2px;
+  margin-top: -2px;
+  margin-right: 10px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.sidebar .logo-tim {
+  border-radius: 50%;
+  border: 1px solid #333;
+  display: block;
+  height: 61px;
+  width: 61px;
+  float: left;
+  overflow: hidden;
+}
+
+.sidebar .logo-tim img {
+  width: 60px;
+  height: 60px;
+}
+
+.ui.circular.icon.button {
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #1a237e;
+  color: #5c6bc0;
+  padding: 10px;
+}
+.sidebar-upward-icon {
+  margin-left: 108px;
+}
+*/ */ .MuiDialog-paperWidthSm {
+  /* max-width: 500px;
+  height:262px;
+  position: fixed;
+  top: 40px;
+  right: 220px;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto; */
+}
+.caret.up.big.icon {
+  /* top: 50vh; */
+  /* transform: translateY(-50%); */
+  font-size: 52px !important;
+  margin-right: 24px !important;
+  position: relative !important;
+  top: -41px !important;
+  right: -227px !important;
+  color: red !important;
+}
+.MuiButtonBase-root {
+  margin-top: 20px !important;
+}
+.mail.icon {
+  color: #1a237e;
+}
+.lock.icon {
+  color: #1a237e;
+}
+.ui.smallInput > input {
+  border-radius: 50px !important;
+}
+.ui.bigInput > input {
+  border-radius: 50px !important;
+  width: 375px !important;
+  border-radius: 50px !important;
+}
+.ui.icon.input.bigInput {
+  border-radius: 22px !important;
+  background-color: #ffd32a !important;
+  color: #1a237e !important;
+  border: 1 1 #ffd32a;
+}
+.forgot-password {
+  padding-top: 10px;
+  text-align: center;
+}
+.signup-firstname-lastname {
+  display: flex;
+  flex-direction: row;
+  place-content: flex-start;
+  justify-content: space-between;
+}
+.signup-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+.login-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-checkbox-text {
+  padding-top: 30px;
+}
+.signup-name {
+  width: 48%;
+}
+.login-name {
+  width: 100%;
+}
+.login-button {
+  width: 100%;
+}
+.navbar-close-button{
+  margin-left:30px;
+  border:none;
+  background-color:#ffffff;
+
+}
+.mobile-header{
+  background-color:#ffffff;    
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  color: #ffd32a;
+  /* padding-top: 25px; */
+  left: 0px;
+  z-index: 5;
+  transition: all 1s ease-in-out;
+  transition-duration: .2s, 1s;
+transition-timing-function: linear, ease-in;
+}
+.navbar-close-button-region{
+  align-self: center;
+}
+.MuiFormControl-root{
+  width: 100% !important;
+}
+.MuiInputBase-root{
+  height:100px !important;
+}
