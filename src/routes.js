@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import AdminLayout from "./AdminLayout";
 import PublicForum from "./components/publicforum";
 import RegisteredCommunity from "./users/registeredCommunity"
