@@ -1,15 +1,16 @@
+import React, { Component } from "react";
 import AdminLayout from "./AdminLayout";
 import PublicForum from "./components/publicforum";
-import RegisteredCommunity from "./users/registeredCommunity"
+import RegisteredCommunity from "./users/registeredCommunity";
+import HomeComponent from "./components/Home/HomeComponent";
 
 const dashboardRoutes = [
   {
-    path: "/dashboard",
+    path: "/home",
     name: "Home",
     icon:"glyphicon glyphicon-home" ,
-    component: AdminLayout,
+    component: HomeComponent,
     layout: "/dashboard",
-    children:false
   },
   {
     path: "/public-forum",
@@ -17,7 +18,6 @@ const dashboardRoutes = [
     icon: "glyphicon glyphicon-user",
     component: PublicForum,
     layout: "/public-forum",
-    children:false
   },
   {
     name: "Community",

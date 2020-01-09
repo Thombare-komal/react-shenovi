@@ -3,13 +3,14 @@ import LayoutHoc from "../../hoc/LayoutHoc";
 import { Route, Switch } from "react-router-dom";
 import routes from "../../routes";
 
-class AppBuilder extends Component {
+class AppBuilder extends React.Component {
   getRoutes = routes => {
     return routes.map((prop, key) => {
+      console.log(prop)
       if (prop.layout === "/dashboard") {
         return (
           <Route
-            path={prop.layout}
+            path={prop.layout+prop.path}
             render={props => (
               <prop.component {...props} componentName={prop.name} />
             )}
@@ -27,7 +28,8 @@ class AppBuilder extends Component {
             key={key}
           />
         );
-      } else if (prop.layout === "/users") {
+      } 
+      else if (prop.layout === "/users") {
         const Component1 = prop.items[0].component;
         console.log(prop.layout+prop.items[0].path)
         return (
